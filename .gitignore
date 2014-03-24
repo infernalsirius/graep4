@@ -1,0 +1,21 @@
+/.bundle
+log/*.log
+tmp/**/*
+.DS_Store
+doc/api
+doc/app
+config/initializers/site_keys.rb
+.sitemanager.dat
+*.sqlite3
+*.db
+/config/newrelic.yml
+*.log
+db/development.sqlite3
+log/development.log
+log/newrelic_agent.log
+*.pid
+tmp/pids/server.pid
+config/deploy.rb
+config/database.yml
+# Ignore application configuration
+/config/application.yml
