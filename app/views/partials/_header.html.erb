@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title><%= page_title %></title>
+  <!-- Styles -->
+  <%= stylesheet_link_tag "main", "responsive", "settings", "blue"%>
+  <!-- Base JS -->
+  <%= javascript_include_tag "jquery-1.9.1.min", "main" %>
+  <!-- Revolution Slider -->
+  <%= javascript_include_tag "jquery.themepunch.plugins.min", "jquery.themepunch.revolution.min", "revolution-slider-options" %>
+  <!-- Prety photo -->
+  <%= javascript_include_tag "jquery.prettyPhoto" %>
+  <script>
+    $(document).ready(function(){
+      $("a[rel^='prettyPhoto']").prettyPhoto();
+    });
+  </script>
+  <%= yield :html_head %>
+</head>
+<body class="bg-random-grey-variations">
+<%= cms_toolbar %>
+  <div class="main boxed">
+    <!-- TOP BAR
+  ============================================= -->
+    <div class="b-top-bar">
+      <div class="layout">
+        <div class="wrap-left">
+          <span class="top-bar-text">Groupe des responsables en analyse et évaluation de programme</span>
+        </div>
+        <div class="wrap-right">
+          <% if logged_in? %>
+            Bonjour, <%= current_user.login %>
+            <%= link_to "Déconnection", cms.logout_path %>
+          <% else %>
+            <a href="#login-form">Connection des membres</a>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <!-- END TOP BAR
+  ============================================= -->
+
+    <!-- HEADER
+  ============================================= -->
+    <div class="header">
+      <div class="layout clearfix">
+        <div class="mob-layout wrap-left">
+          <!-- Logo -->
+          <a href="/" class="logo">
+            <%= image_tag 'logo.png'%>
+          </a>
+          <!-- Mobile Navigation Button -->
+          <div class="btn-menu icon-reorder"></div>
+          <!-- Navigation -->
+          <ul class="menu">
+            <li>
+              <a href="/" class="<%= 'active' if current_page.name == 'Accueil' %>">Accueil</a>
+            </li>
+            <li>
+              <a href="/notre-organisme" class="<%= 'active' if current_page.name == 'Notre organisme' %>">Notre organisme</a>
+            </li>
+            <li>
+              <a href="#" class="<%= 'active' if current_page.name == 'nouvelles' %>">Nouvelles</a>
+            </li>
+            <li>
+              <a href="/documentation-publique" class="<%= 'active' if current_page.name == 'documents' %>">Documents</a>
+            </li>
+            <li>
+              <a href="#">Liens utiles</a>
+              <ul class="submenu">
+                <li><a href="http://www.eval.org/">American Evaluation Association</a>
+                </li>
+                <li><a href="http://www.c3e.fr/">Centre européen d'expertise et d'évaluation</a>
+                </li>
+                <li><a href="http://www.tbs-sct.gc.ca/eval/pubs/meth/pem-mep_f.asp">Gouvernement du Canada, Centre d'excellence en évaluation de programme</a>
+                </li>
+                <li><a href="http://www2.publicationsduquebec.gouv.qc.ca/dynamicSearch/telecharge.php?type=2&file=/A_6_01/A6_01.html">Loi sur l'administration publique</a>
+                </li>
+                <li><a href="http://www.sqep.ca/">Société québécoise d'évaluation de programme</a>
+                </li>
+                <li><a href="http://www.evaluationcanada.ca/">Société canadienne d'évaluation de programme</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/contact"><i class="icon-envelope"></i>Contactez-nous</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Mobile Navigation -->
+      <ul class="mob-menu">
+        <li>
+          <div>
+            <a href="/" class="<%= 'active' if current_page.name == 'Accueil' %>">Accueil</a>
+          </div>
+        </li>
+        <li>
+          <div>
+            <a href="/notre-organisme" class="<%= 'active' if current_page.name == 'Notre organisme' %>">Notre organisme</a>
+          </div>
+        </li>
+        <li>
+          <div>
+            <a href="#" class="<%= 'active' if current_page.name == 'prix' %>">Prix d'excellence</a>
+          </div>
+        </li>
+        <li>
+          <div>
+            <a href="#">Documentation</a>
+          </div>
+        </li>
+        <li>
+          <div>
+            <a href="#">Liens utiles</a>
+            <span class="btn-submenu"></span>
+          </div>
+          <ul class="mob-submenu">
+            <li>
+              <div>
+                <a href="http://www.eval.org/">American Evaluation Association</a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <a href="http://www.c3e.fr/">Centre européen d'expertise et d'évaluation</a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <a href="http://www.tbs-sct.gc.ca/eval/pubs/meth/pem-mep_f.asp">Gouvernement du Canada, Centre d'excellence en évaluation de programme</a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <a href="http://www2.publicationsduquebec.gouv.qc.ca/dynamicSearch/telecharge.php?type=2&file=/A_6_01/A6_01.html">Loi sur l'administration publique</a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <a href="http://www.sqep.ca/">Société québécoise d'évaluation de programme</a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <a href="http://www.evaluationcanada.ca/">Société canadienne d'évaluation de programme</a>
+              </div>
+            </li>
+          </ul>
+          <li>
+            <div>
+              <a href="#">Contactez-nous</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    <!-- End Mobile Navigation -->
+  <!-- END HEADER
+  ============================================= -->

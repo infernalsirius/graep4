@@ -1,0 +1,80 @@
+<%= render :partial => "partials/header" %>
+<div class="content shortcodes">
+    <div class="layout">
+      <div class="b-google-map">
+        <div id="map_canvas" class="full-shadow" style="width: 100%; padding-top: 40%; margin-bottom: 40px;">
+        </div>
+        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <%= javascript_include_tag "jquery.gmap.min"%>
+        <script>
+          jQuery('#map_canvas').gMap({
+            maptype: 'ROADMAP',
+            scrollwheel: false,
+            zoom: 15,
+            markers: [
+              {
+                address: '55 Avenue Des Aulnaies, Quebec City, QC, Canada', // Your Adress Here
+                html: '',
+                popup: false,
+              }
+            ],
+          });
+        </script>
+      </div>
+      <div class="row">
+        <div class="row-item col-1_4">
+          <div class="icon-box">
+            <i class="icon-phone light"></i>
+            <h5>Téléphone / Télécopieur</h5>
+            <p>
+               418 847-9850
+            </p>
+          </div>
+        </div>
+        <div class="row-item col-1_4">
+          <div class="icon-box">
+            <i class="icon-map-marker light"></i>
+            <h5>Adresse</h5>
+            <p>
+               55, rue des Aulnaies<br>
+               Québec (Québec)  G2A 1C9
+            </p>
+          </div>
+        </div>
+        <div class="row-item col-1_4">
+          <div class="icon-box">
+            <i class="icon-envelope light"></i>
+            <h5>Courriel</h5>
+            <p>
+              <a href="mailto:graep@videotron.qc.ca">graep@videotron.qc.ca</a>
+            </p>
+          </div>
+        </div>
+        <div class="row-item col-1_4">
+          <div class="icon-box">
+            <i class="icon-phone light"></i>
+            <h5>Suivez-nous</h5>
+            <ul class="b-social m-varicolored">
+              <li><a class="fb" href="#"><i class="icon-facebook"></i></a></li>
+              <li><a class="tw" href="#"><i class="icon-twitter"></i></a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+      <div class="gap" style="height: 15px;"></div>
+
+      <hr class="dashed" style="margin-top: 0px;">
+
+      <h1 class="centered">Écrivez-nous!</h1>
+
+      <p class="p-20 centered">
+        Vous pouvez nous faire parvenir vos questions et commentaires par courriel.
+      </p>
+
+      <div class="gap" style="height: 20px;"></div>
+
+      <%= container :contact %>
+    </div>
+  </div>
+ </div>
+<%= render :partial => "partials/footer" %>

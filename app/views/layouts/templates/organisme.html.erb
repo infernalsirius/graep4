@@ -1,0 +1,352 @@
+  <%= render :partial => 'partials/header' %>
+
+  <%= container :main %>
+
+  <!-- TITLE BAR
+  ============================================= -->
+    <div class="b-titlebar">
+      <div class="layout">
+        <!-- Bread Crumbs -->
+        <ul class="crumbs">
+          <li>Vous êtes ici:</li>
+          <li><a href="#">Accueil</a>
+          </li>
+          <li><a href="#">Notre Organisme</a>
+          </li>
+        </ul>
+        <!-- Title -->
+        <h1>À propos de notre organisme</h1>
+      </div>
+    </div>
+    <!-- END TITLE BAR
+  ============================================= -->
+
+    <!-- CONTENT
+  ============================================= -->
+    <div class="content">
+      <div class="layout">
+        <div class="row">
+          <div class="row-item col-1_2">
+            <%= container :imagepresident %>
+            <div class="gap" style="height: 30px;">
+            </div>
+          </div>
+          <div class="row-item col-1_2">
+            <h3 class="lined margin-20">Mot du président</h3>
+
+            <%= container :motdupresident %>
+
+            <div class="gap" style="height: 30px;">
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <h3 class="lined margin-20">Notre organisme</h3>
+            
+            <div class="b-accordion">
+              <div class="b-spoiler m-alt">
+                <div class="spoiler-title">
+                  <span>Mission</span>
+                </div>
+                <div class="spoiler-content">
+                  <ul>
+                    <li>
+                      Assurer le développement de la fonction d'évaluation de programme au gouvernement du Québec.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="b-spoiler m-alt">
+                <div class="spoiler-title">
+                  <span>Objectifs</span>
+                </div>
+                <div class="spoiler-content">
+                  <ul>
+                    <li>
+                      Instaurer un réseau de partage des expertises et des expériences en évaluation de programme entre les ministères et organismes.
+                    </li>
+                    <li>
+                      Jouer un rôle de représentation et de conseil auprès des organismes centraux.
+                    </li>
+                    <li>
+                      Promouvoir la fonction d'évaluation de programme et organiser des forums d'échange.
+                    </li>
+                    <li>
+                      Soutenir les dirigeants des ministères et organismes du gouvernement du Québec dans l'implantation des fonctions de suivi de gestion et d'évaluation de programme (programmes, stratégies, interventions, politiques, services, projets et activités).
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="b-spoiler m-alt">
+                <div class="spoiler-title">
+                  <span>Historique</span>
+                </div>
+                <div class="spoiler-content">
+                  <ul>
+                    <li>
+                      Le Groupe des responsables en analyse et évaluation de programme (GRAEP) a été fondé en 1989 afin de favoriser le développement et la promotion de la fonction d'évaluation de programme dans les ministères et organismes du gouvernement du Québec.
+                    </li>
+                    <li>
+                      Les orientations données par le Conseil du trésor attribuent aux sous-ministres et aux dirigeants d'organismes la responsabilité de la mise en oeuvre de la fonction d'évaluation de programme.
+                    </li>
+                    <li>
+                      Le GRAEP regroupe les personnes qui assument la responsabilité d'implanter et de réaliser cette fonction dans les ministères et organismes.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="gap" style="height: 20px;">
+            </div>
+          </div>
+        </div>
+
+        <h3 class="lined margin-20">Comité exécutif</h3>
+
+        <div class="row">
+          <div class="b-member m-quad row-item col-1_4">
+            <div class="member-photo">
+              <img src="img/team/team-1.jpg" alt="">
+              <ul class="b-social">
+                <li>
+                  <a class="lin" href="mailto:"><i class="icon-envelope"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="member-meta">
+              <div class="member-name">
+                Simon Côté
+              </div>
+              <div class="member-position">
+                Président
+              </div>
+            </div>
+            <p>Ministère de l'Agriculture, des Pêcheries et de l'Alimentation</p>
+          </div>
+          <div class="b-member m-quad row-item col-1_4">
+            <div class="member-photo">
+              <img src="img/team/team-2.jpg" alt="">
+              <ul class="b-social">
+                <li>
+                  <a class="lin" href="mailto:"><i class="icon-envelope"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="member-meta">
+              <div class="member-name">
+                Anne Michèle Meggs
+              </div>
+              <div class="member-position">
+                Vice-présidente
+              </div>
+            </div>
+            <p>Ministère de l'Immigration et des Communautés culturelles</p>
+          </div>
+          <div class="b-member m-quad row-item col-1_4">
+            <div class="member-photo">
+              <img src="img/team/team-3.jpg" alt="">
+              <ul class="b-social">
+                <li>
+                  <a class="lin" href="mailto:"><i class="icon-envelope"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="member-meta">
+              <div class="member-name">
+                Nadia Benkherouf
+              </div>
+              <div class="member-position">
+                Trésorière
+              </div>
+            </div>
+            <p>Ministère du Développement durable, de l'Environnement, de la Faune et des Parcs</p>
+          </div>
+          <div class="b-member m-quad row-item col-1_4">
+            <div class="member-photo">
+              <img src="img/team/team-4.jpg" alt="">
+              <ul class="b-social">
+                <li>
+                  <a class="lin" href="mailto:"><i class="icon-envelope"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="member-meta">
+              <div class="member-name">
+                France Veilleux
+              </div>
+              <div class="member-position">
+                Secrétaire
+              </div>
+            </div>
+            <p>Ministère de la Famille</p>
+          </div>
+          <div class="b-member m-quad row-item col-1_4">
+            <div class="member-photo">
+              <img src="img/team/team-4.jpg" alt="">
+              <ul class="b-social">
+                <li>
+                  <a class="lin" href="mailto:"><i class="icon-envelope"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="member-meta">
+              <div class="member-name">
+                Claire Bard
+              </div>
+              <div class="member-position">
+                Administratrice
+              </div>
+            </div>
+            <p>Ministère de la Sécurité publique</p>
+          </div>
+          <div class="b-member m-quad row-item col-1_4">
+            <div class="member-photo">
+              <img src="img/team/team-4.jpg" alt="">
+              <ul class="b-social">
+                <li>
+                  <a class="lin" href="mailto:"><i class="icon-envelope"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="member-meta">
+              <div class="member-name">
+                Carole Blouin
+              </div>
+              <div class="member-position">
+                Administrateur
+              </div>
+            </div>
+            <p>Ministère de l'Emploi et de la Solidarité sociale</p>
+          </div>
+          <div class="b-member m-quad row-item col-1_4">
+            <div class="member-photo">
+              <img src="img/team/team-4.jpg" alt="">
+              <ul class="b-social">
+                <li>
+                  <a class="lin" href="mailto:"><i class="icon-envelope"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="member-meta">
+              <div class="member-name">
+                Harold Côté
+              </div>
+              <div class="member-position">
+                Administrateur
+              </div>
+            </div>
+            <p>Ministère de la Santé et des Services sociaux</p>
+          </div>
+          <div class="b-member m-quad row-item col-1_4">
+            <div class="member-photo">
+              <img src="img/team/team-4.jpg" alt="">
+              <ul class="b-social">
+                <li>
+                  <a class="lin" href="mailto:"><i class="icon-envelope"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="member-meta">
+              <div class="member-name">
+                Pascal Hardy
+              </div>
+              <div class="member-position">
+                Administrateur
+              </div>
+            </div>
+            <p>Ministère des Relations internationales, de la Francophonie et du Commerce extérieur</p>
+          </div>
+          <div class="b-member m-quad row-item col-1_4">
+            <div class="member-photo">
+              <img src="img/team/team-4.jpg" alt="">
+              <ul class="b-social">
+                <li>
+                  <a class="lin" href="mailto:"><i class="icon-envelope"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="member-meta">
+              <div class="member-name">
+                Christophe Marchal
+              </div>
+              <div class="member-position">
+                Administrateur
+              </div>
+            </div>
+            <p>Ministère des Finances et de l'Économie</p>
+          </div>
+          <div class="b-member m-quad row-item col-1_4">
+            <div class="member-photo">
+              <img src="img/team/team-4.jpg" alt="">
+              <ul class="b-social">
+                <li>
+                  <a class="lin" href="mailto:"><i class="icon-envelope"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="member-meta">
+              <div class="member-name">
+                Louise Rompré
+              </div>
+              <div class="member-position">
+                Administrateur
+              </div>
+            </div>
+            <p>Commission de la santé et de la sécurité du travail</p>
+          </div>
+          <div class="b-member m-quad row-item col-1_4">
+            <div class="member-photo">
+              <img src="img/team/team-4.jpg" alt="">
+              <ul class="b-social">
+                <li>
+                  <a class="lin" href="mailto:"><i class="icon-envelope"></i></a>
+                </li>
+            </div>
+            <div class="member-meta">
+              <div class="member-name">
+                Valérie Saysset 
+              </div>
+              <div class="member-position">
+                Administratrice
+              </div>
+            </div>
+            <p>Ministère de l'Éducation, du Loisir et du Sport</p>
+          </div>
+          <div class="b-member m-quad row-item col-1_4">
+            <div class="member-photo">
+              <img src="img/team/team-4.jpg" alt="">
+              <ul class="b-social">
+                <li>
+                  <a class="lin" href="mailto:"><i class="icon-envelope"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="member-meta">
+              <div class="member-name">
+                Lorraine Damecour
+              </div>
+              <div class="member-position">
+                Soutien au Comité exécutif
+              </div>
+            </div>
+            <p>Ministère des Ressources naturelles</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- END CONTENT
+  ============================================= -->
+
+  <%= render :partial => "partials/footer"%>
+
+</div>
+  <!-- END MAIN
+============================================= -->
+</body>
+
+</html>
