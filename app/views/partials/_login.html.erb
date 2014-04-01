@@ -9,19 +9,9 @@
        <div class="message-close icon-remove"></div>
       </div>
     <% end %>
-
-      <%= form_tag cms.login_path , :class => "b-form b-contact-form" do %>
-      <div class="input-wrap m-full-width">
-        <%= hidden_field_tag :success_url, @success_url %>
-        <%= hidden_field_tag :failure_url, @failure_url %>
-        <%= label_tag :login, "" %>
-        <%= text_field_tag :login, @login, :placeholder => "Utilisateur", :class => "field-name" %>
-        <%= label_tag :password, "  " %>
-        <%= password_field_tag :password, :placeholder => "Mot de passe", :class => "field-password" %>
-        <%= label_tag :remember_me, "se souvenir de moi" %>
-        <%= check_box_tag :remember_me, '1', @remember_me %>
-        <%= submit_tag "Connection" , :class => "btn-submit btn colored" %>
-      </div>
+    <%= simple_form_for @cms_user do |f| %>
+      <%= f.input :login, :required => false, :autofocus => true %>
+      <%= f.input :password, :required => false %>
     <% end %>
   <% end %>
 </div>

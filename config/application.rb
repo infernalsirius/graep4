@@ -42,5 +42,7 @@ module Graep4
 
     config.cms.attachments.storage = :filesystem
 
+    config.cms.content_types.blacklist -= [:login_portlet]
+
   end
 end
