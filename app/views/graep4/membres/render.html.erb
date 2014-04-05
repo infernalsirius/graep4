@@ -1,0 +1,15 @@
+<dl>
+    <dt>Name:</dt><dd><%= show :name %></dd>
+    <dt>Nom:</dt><dd><%= show :nom %></dd>
+        <dt>Prenom:</dt><dd><%= show :prenom %></dd>
+        <dt>Date Inscription:</dt><dd><%= show :date_inscription %></dd>
+        <dt>Titre:</dt><dd><%= show :titre %></dd>
+        <dt>Direction:</dt><dd><%= show :direction %></dd>
+        <dt>Ministere:</dt><dd><%= show :ministere %></dd>
+        <dt>Telephone:</dt><dd><%= show :telephone %></dd>
+        <dt>Telecopieur:</dt><dd><%= show :telecopieur %></dd>
+        <dt>Courriel:</dt><dd><%= show :courriel %></dd>
+        <dt>Commentaire:</dt><dd><%= show :commentaire %></dd>
+        <dt>Attachment:</dt><dd><%= link_to "Attachment", attachment_path_for(@content_block.attachment) %></dd>
+    
+</dl>
