@@ -22,7 +22,7 @@
   </script>
   <%= yield :html_head %>
 </head>
-<body class="bg-random-grey-variations">
+<body class="bg-irongrip">
 <%= cms_toolbar %>
   <div class="main boxed">
     <!-- TOP BAR
@@ -30,7 +30,7 @@
     <div class="b-top-bar">
       <div class="layout">
         <div class="wrap-left">
-          <span class="top-bar-text">Groupe des responsables en analyse et évaluation de programme</span>
+            <span class="top-bar-text">Groupe des responsables en analyse et évaluation de programme</span>
         </div>
         <div class="wrap-right">
           <% if logged_in? %>
@@ -65,27 +65,13 @@
               <a href="/notre-organisme" class="<%= 'active' if current_page.name == 'Notre organisme' %>">Notre organisme</a>
             </li>
             <li>
-              <a href="#" class="<%= 'active' if current_page.name == 'nouvelles' %>">Nouvelles</a>
+              <a href="/prix" class="<%= 'active' if current_page.name == 'prix' %>">Prix d'excellence</a>
             </li>
             <li>
               <a href="/documentation-publique" class="<%= 'active' if current_page.name == 'documents' %>">Documents</a>
             </li>
             <li>
-              <a href="#">Liens utiles</a>
-              <ul class="submenu">
-                <li><a href="http://www.eval.org/">American Evaluation Association</a>
-                </li>
-                <li><a href="http://www.c3e.fr/">Centre européen d'expertise et d'évaluation</a>
-                </li>
-                <li><a href="http://www.tbs-sct.gc.ca/eval/pubs/meth/pem-mep_f.asp">Gouvernement du Canada, Centre d'excellence en évaluation de programme</a>
-                </li>
-                <li><a href="http://www2.publicationsduquebec.gouv.qc.ca/dynamicSearch/telecharge.php?type=2&file=/A_6_01/A6_01.html">Loi sur l'administration publique</a>
-                </li>
-                <li><a href="http://www.sqep.ca/">Société québécoise d'évaluation de programme</a>
-                </li>
-                <li><a href="http://www.evaluationcanada.ca/">Société canadienne d'évaluation de programme</a>
-                </li>
-              </ul>
+              <a href="/liens" class="<%= 'active' if current_page.name == 'liens' %>">Liens</a>
             </li>
             <li>
               <a href="/contact"><i class="icon-envelope"></i>Contactez-nous</a>
@@ -107,58 +93,26 @@
         </li>
         <li>
           <div>
-            <a href="#" class="<%= 'active' if current_page.name == 'prix' %>">Prix d'excellence</a>
+            <a href="/prix" class="<%= 'active' if current_page.name == 'prix' %>">Prix d'excellence</a>
           </div>
         </li>
         <li>
           <div>
-            <a href="#">Documentation</a>
+            <a href="/documentation-publique" class="<%= 'active' if current_page.name == 'documents' %>">Documents</a>
           </div>
         </li>
         <li>
           <div>
-            <a href="#">Liens utiles</a>
-            <span class="btn-submenu"></span>
+             <a href="/liens" class="<%= 'active' if current_page.name == 'liens' %>">Liens</a>
           </div>
-          <ul class="mob-submenu">
-            <li>
-              <div>
-                <a href="http://www.eval.org/">American Evaluation Association</a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="http://www.c3e.fr/">Centre européen d'expertise et d'évaluation</a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="http://www.tbs-sct.gc.ca/eval/pubs/meth/pem-mep_f.asp">Gouvernement du Canada, Centre d'excellence en évaluation de programme</a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="http://www2.publicationsduquebec.gouv.qc.ca/dynamicSearch/telecharge.php?type=2&file=/A_6_01/A6_01.html">Loi sur l'administration publique</a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="http://www.sqep.ca/">Société québécoise d'évaluation de programme</a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="http://www.evaluationcanada.ca/">Société canadienne d'évaluation de programme</a>
-              </div>
-            </li>
-          </ul>
-          <li>
-            <div>
-              <a href="#">Contactez-nous</a>
-            </div>
-          </li>
-        </ul>
-      </div>
+        </li>
+        <li>
+          <div>
+            <a href="/contact"><i class="icon-envelope"></i>Contactez-nous</a>
+          </div>
+        </li>
+      </ul>
+    </div>
     <!-- End Mobile Navigation -->
   <!-- END HEADER
   ============================================= -->
