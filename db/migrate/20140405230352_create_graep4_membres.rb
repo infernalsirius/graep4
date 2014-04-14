@@ -11,8 +11,6 @@ class CreateGraep4Membres < ActiveRecord::Migration
       t.string :telecopieur
       t.string :courriel
       t.text :commentaire
-      
-
       t.timestamps
     end
   end
