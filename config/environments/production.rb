@@ -3,7 +3,7 @@ Graep4::Application.configure do
   config.cms.site_domain = "www.siriusity.com"
 
   # Configure your mail server's address below
-  config.action_mailer.smtp_settings = {:address => 'graep@videotron.ca', :domain => config.cms.site_domain}
+  config.action_mailer.smtp_settings = {:address => 'graep@videotron.qc.ca', :domain => config.cms.site_domain}
 
   # Settings specified here will take precedence over those in config/application.rb.
 
